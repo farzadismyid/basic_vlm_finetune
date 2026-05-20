@@ -17,6 +17,9 @@ def load_qwen2vl():
         device_map="auto",
     )
 
-    processor = AutoProcessor.from_pretrained(MODEL_ID)
+    pprocessor = AutoProcessor.from_pretrained(
+    MODEL_ID,
+    use_fast=False,
+    )
 
     return model, processor
