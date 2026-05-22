@@ -1,4 +1,6 @@
 import time
+from xml.parsers.expat import model
+from src.config.generation_config import GENERATION_CONFIG
 import torch
 
 
@@ -44,12 +46,11 @@ def run_inference(
     start_time = time.time()
 
     with torch.inference_mode():
-
+       
         generated_ids = model.generate(
-            **inputs,
-            max_new_tokens=max_new_tokens,
+           **inputs,
+            **GENERATION_CONFIG,
         )
-
     end_time = time.time()
 
     output_text = processor.batch_decode(
