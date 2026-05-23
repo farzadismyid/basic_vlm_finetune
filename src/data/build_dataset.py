@@ -1,5 +1,7 @@
 import json
 
+from pathlib import Path
+
 from src.data.dataset_schema import (
     create_training_sample,
 )
@@ -31,6 +33,8 @@ def build_dataset(manifest):
 
 
 def save_dataset(dataset, output_path):
+
+    output_path = Path(output_path)
 
     with open(output_path, "w") as f:
 
