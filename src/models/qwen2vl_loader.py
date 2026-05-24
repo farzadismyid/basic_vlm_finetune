@@ -6,8 +6,7 @@ from transformers import (
 )
 
 
-MODEL_ID = "Qwen/Qwen2-VL-2B-Instruct"
-
+from src.config.settings import MODEL_ID
 
 def load_qwen2vl():
 
