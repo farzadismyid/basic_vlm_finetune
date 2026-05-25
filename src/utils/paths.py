@@ -20,6 +20,19 @@ METADATA_DIR = SAMPLES_DIR / "metadata"
 
 FASHION_IMAGES_DIR = SAMPLES_DIR / "fashion_images"
 
+EXTERNAL_DATA_DIR = DATA_DIR / "external"
+
+POLYVORE_DIR = EXTERNAL_DATA_DIR / "polyvore"
+
+POLYVORE_RAW_DIR = POLYVORE_DIR / "raw"
+
+POLYVORE_PROCESSED_DIR = (
+    POLYVORE_DIR / "processed"
+)
+
+POLYVORE_METADATA_DIR = (
+    POLYVORE_DIR / "metadata"
+)
 
 # =========================
 # OUTPUTS
