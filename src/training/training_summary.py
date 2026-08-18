@@ -12,4 +12,3 @@ def print_training_summary(stats):
         f"Trainable Parameters: "
         f"{stats['trainable_parameters']:,}"
     )
-    
