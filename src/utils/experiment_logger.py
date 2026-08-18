@@ -11,7 +11,6 @@ EXPERIMENTS_DIR.mkdir(
     exist_ok=True,
 )
 
-
 def save_experiment(results, experiment_name):
 
     timestamp = datetime.now().strftime(
